@@ -1,0 +1,12 @@
+#cells{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(228, 148, 1);
+    border-color: gray;
+    margin: 1px;
+    border-radius: 50%;
+}
+*{
+    background-color:burlywood;
+    font-family: 'Quicksand', sans-serif;
+}
