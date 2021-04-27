@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> colorzilla </title>
+        <style>
+            *{padding:0; margin:0;}
+            
+            li{
+                list-style:none;
+            }
+            
+            a{
+                text-decoration: none;
+                color:#303030;
+            }
+            
+            body{
+                font-family: 'Arial';
+                font-size: 14px;
+                color:#303030;
+                line-height:28px;
+            }
+            
+            .top{
+                width:900px;
+                height:120px;
+                background-color:#dbdbdb;
+                overflow:hidden;
+                margin:10px auto;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edf1f4+0,d7dfe5+24,d7d6ff+52,e0e0e0+79,e3e5e8+100 */
+                background: #edf1f4; /* Old browsers */
+                background: -moz-linear-gradient(top,  #edf1f4 0%, #d7dfe5 24%, #d7d6ff 52%, #e0e0e0 79%, #e3e5e8 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  #edf1f4 0%,#d7dfe5 24%,#d7d6ff 52%,#e0e0e0 79%,#e3e5e8 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  #edf1f4 0%,#d7dfe5 24%,#d7d6ff 52%,#e0e0e0 79%,#e3e5e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf1f4', endColorstr='#e3e5e8',GradientType=0 ); /* IE6-9 */
+
+            }
+            
+            .logo{
+                width:87px;
+                height:83px;
+                background-color:#e3e357;
+                display:block;
+                float:left;
+                margin:18px;
+            }
+            .logo_text{
+                width:300px;
+                height:83px;
+                margin-top:15px;
+                float:left;
+                background-color:#e3e357;
+            }
+            
+            .logo_text h1{
+                line-height:30px;
+                margin-top:13px;
+            }
+            .logo_text h2{
+                font-size: 14px;
+                line-height:26px;
+            }
+            /*contentsbox*/
+            .contents{
+                width:900px;
+                overflow:hidden;
+                margin:0 auto;
+                background-color:#9b9b9b;
+                margin-bottom:20px;
+            }
+            
+            .left{
+                width:700px;
+                overflow:hidden;
+                float:left;
+                background-color:#e9e9e9;
+            }
+            .right{
+                width:195px;
+                overflow:hidden;
+                float:right; /*여백 5px 만들어주기 위함*/
+                background-color:#e9e9e9;
+                padding:25px;
+                box-sizing:border-box; /*border, padding 전체폭에 포함*/
+            }
+            
+            .leftbox{
+                width:700px;
+                overflow:hidden;
+                background-color:#dbdbdb;
+                padding:25px;
+                box-sizing:border-box;
+                margin-bottom: 10px;
+            }
+            
+            .leftbox li{
+                list-style:disc;
+                
+            }
+            
+            .leftbox ul{
+                margin-left:15px;
+            }
+            .gameScreenshot{
+                float:left
+            }
+            .btn01{
+                width:140px;
+                line-height: 35px;
+                display: block;
+                background-color: #006cff;
+                margin:10px auto;
+                text-align: center;
+                color: #fff;
+                border-radius:5px; /*모서리 둥글리기 - 한자리 입력시 4 지점에 모두 적용*/
+                border:none;
+                float: right;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!--topbox-->
+        <div class="top">
+            <a href="#" class="logo"><img src="html5.png" alt="로고" width=87px height=83px/></a>
+            
+            <div class="logo_text">
+                <h1>HTML Games</h1>
+                <h2>Web browser based games</h2>
+            </div>
+            
+        </div>
+        <!--contents box-->
+        <div class="contents">
+            <div class="left">
+                <div class="leftbox">
+                    <h2>TicTacToe</h2>
+                    <span>
+                        <img src="match4game.png" class="gameScreenshot" id="tictactoe" width=87px height=83px>
+                    </span>
+                    <p>1 kind in a row</p>
+                    <a href="tictactoe/tictactoe.html" class="btn01">play</a>
+                </div>
+                <div class="leftbox">
+                    <h2>Match4chips</h2>
+                    <span>
+                        <img src="match4game.png" class="gameScreenshot" id="Match4chips" width=87px height=83px>
+                    </span>
+                    <p>
+                        Drop chips and make 4 in a row
+                    </p>
+                    <a href="match4game/match4game.html" class="btn01">play</a>
+                </div>
+            </div>
+            <div class="right">
+                <h3>Documentation</h3>
+                <ul>
+                    <li>Features</li>
+                    <li>Help</li>
+                    <li>Screenshots</li>
+                    <li>Version history</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <script src="main.js"></script>
+        <!--//contents box-->
+    </body>
+</html>

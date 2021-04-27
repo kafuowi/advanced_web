@@ -1,0 +1,18 @@
+.top{
+    width:700px;
+    height:120px;
+    background-color:#dbdbdb;
+    overflow:hidden;
+    margin:10px auto;
+}
+td{
+width:150px;
+height:150px;
+margin: auto;
+text-align: center;
+font-size: 100px;
+border :5px solid black;
+}
+*{
+font-family: 'Quicksand', sans-serif;
+}
