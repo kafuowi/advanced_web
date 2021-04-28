@@ -33,15 +33,23 @@
                 background-color:#dbdbdb;
                 overflow:hidden;
                 margin:10px auto;
-                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edf1f4+0,d7dfe5+24,d7d6ff+52,e0e0e0+79,e3e5e8+100 */
-                background: #edf1f4; /* Old browsers */
-                background: -moz-linear-gradient(top,  #edf1f4 0%, #d7dfe5 24%, #d7d6ff 52%, #e0e0e0 79%, #e3e5e8 100%); /* FF3.6-15 */
-                background: -webkit-linear-gradient(top,  #edf1f4 0%,#d7dfe5 24%,#d7d6ff 52%,#e0e0e0 79%,#e3e5e8 100%); /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to bottom,  #edf1f4 0%,#d7dfe5 24%,#d7d6ff 52%,#e0e0e0 79%,#e3e5e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf1f4', endColorstr='#e3e5e8',GradientType=0 ); /* IE6-9 */
-
             }
-            
+            .search{
+                width:900px;
+                height:30px;
+                background-color:#dbdbdb;
+                overflow:hidden;
+                margin:10px auto;
+            }
+            #searchbutton{
+                width:40px;
+                line-height: 20px;
+                background-color: #006cff;
+                text-align: center;
+                color: #fff;
+                border-radius:5px; /*모서리 둥글리기 - 한자리 입력시 4 지점에 모두 적용*/
+                border:none;
+            }
             .logo{
                 width:87px;
                 height:83px;
@@ -102,7 +110,7 @@
             .gameScreenshot{
                 float:left
             }
-            .btn01{
+            .btn{
                 width:140px;
                 line-height: 35px;
                 display: block;
@@ -117,7 +125,10 @@
         </style>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-    
+        <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
     </head>
     
     <body>
@@ -129,7 +140,14 @@
                 <h1>HTML Games</h1>
                 <h2>Web browser based games</h2>
             </div>
+
             
+        </div>
+        <div class="search">
+                <form>
+                    Search Games : <input type="text" name="GameName" id="gameText"> <button id=
+                    "searchbutton" type="button" value="Go">Go<br/>
+                </form>
         </div>
         <!--contents box-->
         <div class="contents">
@@ -140,26 +158,25 @@
                         <img src="Tic Tac Toe Game.png" class="gameScreenshot" id="tictactoe" width=87px height=83px>
                     </span>
                     <p>1 kind in a row</p>
-                    <a href="tictactoe/tictactoe.html" class="btn01">play</a>
+                    <a href="tictactoe/tictactoe.html" class="btn">play</a>
                 </div>
                 <div class="leftbox">
-                    <h2>Match4chips</h2>
+                    <h2>Match4game</h2>
                     <span>
                         <img src="match4game.png" class="gameScreenshot" id="Match4chips" width=87px height=83px>
                     </span>
                     <p>
                         Drop chips and make 4 in a row
                     </p>
-                    <a href="match4game/match4game.html" class="btn01">play</a>
+                    <a href="match4game/match4game.html" class="btn">play</a>
                 </div>
             </div>
             <div class="right">
                 <h3>Documentation</h3>
                 <ul>
-                    <li>Features</li>
-                    <li>Help</li>
+                    <li>Introduction</li>
                     <li>Screenshots</li>
-                    <li>Version history</li>
+                    <li><a href="https://github.com/kafuowi/">Developer Github</a></li>
                 </ul>
             </div>
             
