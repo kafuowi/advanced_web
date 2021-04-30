@@ -143,5 +143,5 @@ $('#reset').on('click', function(){
 })
 
 $('#return').on('click', function(){
-    location.href= '../index.html';
+    location.href= '../';
 })
