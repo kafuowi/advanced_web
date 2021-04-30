@@ -1,10 +1,10 @@
 var cellList = $("#cells");
+var alerttext ="Enter Your Name, you will be"
 
-
-var player1 = prompt("Player One: Enter Your Name, you will be Blue");
+var player1 = prompt("Player One: "+alerttext+" Blue");
 var player1color = 'rgb(86,151,255)';
 
-var player2 = prompt("Player Two: Enter Your Name, you will be Red");
+var player2 = prompt("Player Two: "+alerttext+" Red");
 var player2color = 'rgb(237,45,73)';
 
 
@@ -120,11 +120,11 @@ $('.board button').on('click', function(){
 
     if(currentPlayer === 1){
         currentName = player1;
-        $('h3').text(currentName+" it is your turn.");
+        $('h3').text(currentName+", it is your turn.");
         currentColor = player1color;
     }else{
         currentName = player2;
-        $('h3').text(currentName+" it is your turn.");
+        $('h3').text(currentName+", it is your turn.");
         currentColor = player2color;
     }
 
